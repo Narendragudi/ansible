@@ -1,0 +1,12 @@
+- name: variables from PLAY level
+  hosts: localhosts
+  tasks: 
+  - name: check variables
+    absible:builtin:debug:
+      msg: "Hello {{PERSON}}, good {{WISHES}}"
+
+      #COMMAND LO NUNDI KUDA VALUES EVACHU
+      #example--
+      #ansible-playbook -i inventory.ini -e ansible_user=centos -e ansible_password=DevOps321 -e "PERSON=MAN" -e "WISHES=GOOD MORNING" 09-vars-form-args.yaml
+
+      #command lo nundi ela echina thisukuntundhi
