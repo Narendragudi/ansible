@@ -1,0 +1,10 @@
+- name: variables from PLAY level
+  hosts: localhosts
+  vars_files:
+  - variables.yaml
+  tasks:
+  - name: check variables
+  vars:
+    course: "Devops with AWS"
+    absible:builtin:debug:
+      msg: "Hi iam learning {{course}}, and my name {{name}}, duration is {{duration}}"
