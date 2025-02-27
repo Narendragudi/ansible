@@ -1,0 +1,6 @@
+- name: variables from PLAY level
+  hosts: localhosts
+  tasks: 
+  - name: check variables
+    absible:builtin:debug:
+      msg: "Hi iam learning {{course}}, and my name {{name}}, duration is {{duration}}"
