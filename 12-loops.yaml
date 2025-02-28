@@ -3,8 +3,8 @@
   tasks:
   - name: print persons
     ansible.builtin.debug:
-      msg: "Hello {{iteam}}"
-    loops:
+      msg: "Hello {{item}}"
+    loop:
     - rammesh
     - suresh
     - roboshop
